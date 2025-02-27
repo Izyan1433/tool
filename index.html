@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tools Website - Home</title>
+  <style>
+    /* General Styles */
+    body {
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f4f4f9;
+      color: #333;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    /* Navigation Bar */
+    .navbar {
+      background: linear-gradient(135deg, #007bff, #0056b3);
+      color: #fff;
+      padding: 15px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .navbar .logo {
+      font-size: 24px;
+      font-weight: bold;
+    }
+
+    .navbar .nav-links {
+      display: flex;
+      gap: 20px;
+    }
+
+    .navbar .nav-links a {
+      color: #fff;
+      font-weight: 500;
+      transition: color 0.3s ease;
+    }
+
+    .navbar .nav-links a:hover {
+      color: #ffdd57;
+    }
+
+    /* Hero Section */
+    .hero {
+      background: linear-gradient(135deg, #007bff, #00bfff);
+      color: #fff;
+      padding: 100px 20px;
+      text-align: center;
+    }
+
+    .hero h1 {
+      font-size: 48px;
+      margin-bottom: 20px;
+    }
+
+    .hero p {
+      font-size: 18px;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    /* Tool Categories Section */
+    .tools-section {
+      padding: 50px 20px;
+      text-align: center;
+    }
+
+    .tools-section h2 {
+      font-size: 36px;
+      margin-bottom: 40px;
+    }
+
+    .tool-cards {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    .tool-card {
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+      width: 250px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .tool-card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+    }
+
+    .tool-card img {
+      width: 50px;
+      height: 50px;
+      margin-bottom: 15px;
+    }
+
+    .tool-card h3 {
+      font-size: 20px;
+      margin-bottom: 10px;
+    }
+
+    .tool-card p {
+      font-size: 14px;
+      color: #777;
+    }
+
+    /* Footer */
+    footer {
+      background: #333;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+      margin-top: 50px;
+    }
+
+    footer p {
+      margin: 0;
+    }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+      .navbar {
+        flex-direction: column;
+        gap: 10px;
+      }
+
+      .hero h1 {
+        font-size: 36px;
+      }
+
+      .tool-card {
+        width: 100%;
+        max-width: 300px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Navigation Bar -->
+  <nav class="navbar">
+    <div class="logo">Tools Website</div>
+    <div class="nav-links">
+      <a href="#">Home</a>
+      <a href=img-compress.html>Image Tools</a>
+      <a href="#">PDF Tools</a>
+      <a href="#">About</a>
+      <a href="#">Contact</a>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <h1>Your All-in-One Toolbox</h1>
+    <p>Explore a wide range of tools for images, PDFs, and more. Simplify your tasks with our easy-to-use online tools.</p>
+  </section>
+
+  <!-- Tool Categories Section -->
+  <section class="tools-section">
+    <h2>Featured Tools</h2>
+    <div class="tool-cards">
+      <!-- Image Tools -->
+      <div class="tool-card">
+        <img src="https://cdn-icons-png.flaticon.com/512/2906/2906274.png" alt="Image Tools">
+        <h3>Image Tools</h3>
+        <p>Compress, resize, convert, and edit images effortlessly.</p>
+      </div>
+      <!-- PDF Tools -->
+      <div class="tool-card">
+        <img src="https://cdn-icons-png.flaticon.com/512/337/337946.png" alt="PDF Tools">
+        <h3>PDF Tools</h3>
+        <p>Merge, split, compress, and convert PDFs with ease.</p>
+      </div>
+      <!-- More Tools -->
+      <div class="tool-card">
+        <img src="https://cdn-icons-png.flaticon.com/512/1997/1997928.png" alt="More Tools">
+        <h3>More Tools</h3>
+        <p>Discover additional tools for your everyday needs.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2023 Tools Website. All rights reserved.</p>
+  </footer>
+</body>
+</html>
